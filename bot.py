@@ -1,10 +1,10 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "8412718462:AAGfYzR2mWzJWjMamQEn-uPTxgo0FP5m2uM"
+TOKEN = os.getenv("8412718462:AAGfYzR2mWzJWjMamQEn-uPTxgo0FP5m2uM")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("اه سوسو يوجععع")
+    await update.message.reply_text("شباحوووو")
 
 app = ApplicationBuilder().token(TOKEN).build()
 
@@ -17,7 +17,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 TOKEN = os.getenv("8412718462:AAGfYzR2mWzJWjMamQEn-uPTxgo0FP5m2uM")
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def عبد(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("ها اخ الكحبه خليتني اشتغل 24 ساعه شنو عبد يمك اني")
 
 app = ApplicationBuilder().token(TOKEN).build()
